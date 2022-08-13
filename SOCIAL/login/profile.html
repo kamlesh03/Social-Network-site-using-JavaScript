@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>profile</title>
+	<!-- CSS and JavaScript references -->
+	<link rel="stylesheet" type="text/css" href="../CSS/header.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/profile.css">
+	<script src="../js/header.js"></script>
+	<script src="../js/profile.js"></script>
+	<!-- Ending of CSS and JavaScrit -->
+</head>
+<body  onload="showSlides(1);">
+	<!-- Header section -->
+	<div class="headerfixed">
+		<!-- Header start -->
+	<div class="header">
+		<!-- Wrapper start of heading-->
+		<div class="wrapper">
+		<!--  logo -->
+        <a href="home.html"><img src="../New folder/insta.jpg" width=120 height=45 class="logoletter"/></a>
+			<!-- Search bar -->
+			<form id="searching">
+			  <input type="text" name="search" placeholder="Search.." id="search">
+			</form>
+
+			<!-- icon bar to navigate to all pages -->
+			<div class="icon-bar">
+			 <ul>
+			 <!-- home -->
+			 <li style="border-bottom: 6px solid white;"><a href="home.html" onmouseover="headerchange(1);" onmouseout="headerorigin(1);"><img src="../New folder/photoes/home.png" id="insta-home"><p id="p1">Home</p></a></li>
+			 <!-- profile -->
+			 <li> <a href="profile.html" onmouseover="headerchange(2);" onmouseout="headerorigin(2);"><img src="../New folder/photoes/profile.png" id="insta-profile"><p id="p2">Profile</p></a> </li>
+			 <!-- society -->
+			 <li><a href="society.html" onmouseover="headerchange(3);" onmouseout="headerorigin(3);"><img src="../New folder/photoes/society.jpg" id="insta-society"><p id="p3">Society</p></a></li>
+			 <!-- message -->
+			 <li> <a href="messages.html" onmouseover="headerchange(4);" onmouseout="headerorigin(4);"><img src="../New folder/photoes/message.png" id="insta-message"><p id="p4">Messages</p></a></li>
+			 <!-- notification -->
+			 <li><a href="#" onmouseover="headerchange(5);" onmouseout="headerorigin(5);"><img src="../New folder/photoes/notification.png" id="insta-notification"><p id="p5">Notifications</p></a>
+			 <div id="notify">
+				 <p>No New Notification</p>
+				 <hr style="background-color:white;width: 90%;">
+			 </div>
+			 </li>
+			 </ul>	 
+			   
+			</div>
+			<!-- Ending of Icon bar -->
+
+
+		</div>
+		<!-- Wrapper End of heading -->
+
+	</div>
+	<!-- End of header -->
+	</div>
+	<!-- End of header section -->
+
+	<!-- Content Section -->
+	<div class="content">
+		<!-- Start wrapper -->
+		<div class="wrapper">
+
+			<!-- Start Left section profile -->
+			<div class="leftfixedprofile">
+
+				<!-- area of slide show -->
+				<div class="slideshowcontainer">
+					
+					<!-- change slideshow image -->
+					<input type="file" name="pic" class="chooseslide" accept="image/*" title="change slideshow image" onchange="loadFile(event)" onmouseover="stoptime()" onmouseout="starttime()"/>
+					<p class="slideEdit">&#9998;</p>
+					<!-- end of change slideshow image -->
+
+					<div class="bubble">
+					<span class="dot" onclick="currentslide(1)"></span>
+					<span class="dot" onclick="currentslide(2)"></span>
+					<span class="dot" onclick="currentslide(3)"></span>
+					</div>
+
+					<!-- sildeshow images -->
+					<div class="singleslide">
+						<div class="number">1/3</div>
+						<img src="../New folder/photoes/network society.jpg" class="slidimg"/>
+					</div>
+					<div class="singleslide">
+						<div class="number">2/3</div>
+						<img src="../New folder/photoes/society1.jpg" class="slidimg"/>
+					</div>
+					<div class="singleslide">
+						<div class="number">3/3</div>
+						<img src="../New folder/photoes/society2.jpg" class="slidimg"/>
+					</div>
+					<!-- End of slideshow images -->
+
+					<!-- prev and next button to change slideshow -->
+					<div class="prev" onclick="plusSlides(-1);">&#10094;</div>
+       				<div class="next" onclick="plusSlides(1);">&#10095;</div>
+				</div>
+				<!-- End area of slideshow -->
+
+				<!-- start sidebar left profile -->
+				<div class="sidebarleftprofile">
+
+					<!-- change image -->
+					<input type="file" name="pic" class="chooseslide1" accept="image/*" onchange="loadFile1(event)" title="change profile pic"/>
+					<p class="slideEdit1">&#9998;</p>
+					<!-- End change image -->
+
+					<img src="../New folder/dp" title="Profile Pic" class="profilepic"/>
+					<p id="sidename"> Kamlesh Tambe</p>
+					<p id="nosociety">31</p>
+					<p id="societyname"><a href="society.html">Society</a></p>
+					<p id="logout"><a href="../socia media webpage.html">Log Out</a></p>
+				
+				</div>
+				<!-- End of sidebar left profile -->
+ 				
+
+				<!-- start of timeline of profile info -->
+ 				<div class="timeline">
+
+ 					<div class="container left">
+
+ 						<p class="slideEdit2" title="Edit" onclick="enablemodal()">&#9998;</p>
+ 						<div class="tcontent">
+ 							<h2>Personal Detail</h2>
+ 							<h4>First Name:</h4>
+ 							<p>Kamlesh</p>
+ 							<h4>Last Name:</h4>
+ 							<p>Tambe</p>
+ 							<h4>Email:</h4>
+ 							<p>kamleshtambe50@gmail.com</p>
+ 							<h4>Date Of Birth:</h4>
+ 							<p>3 april 2001</p>
+ 							<h4>Gender:</h4>
+ 							<p>Male</p>
+ 							<h4>Phone no:</h4>
+ 							<p>9834321200</p>
+							<h4>Religion</h4>
+ 							<p>Hindu</p>
+
+ 							
+ 						</div>
+
+ 					</div>
+					 <div class="container right">
+
+						<p class="slideEdit2" title="Edit" onclick="enablemodal1(1)">&#9998;</p>
+						<div class="tcontent">
+							<h2>Primary Education</h2>
+							<h4>Primary School:</h4>
+							<p>Pvp College</p>
+							<h4>Degree:</h4>
+							<p>Higher Secondary</p>
+							<h4>Field of Study:</h4>
+							<p>Science</p>
+							<h4>Academy Year:</h4>
+							<p>2017-2019</p>
+						</div>
+
+					</div>
+
+ 				
+					<div class="container left">
+
+						<p class="slideEdit2" title="Edit" onclick="enablemodal1(2)">&#9998;</p>
+						<div class="tcontent">
+							<h2>Secondary Education</h2>
+							<h4>Secondary School:</h4>
+							<p>Dr D Y Patil Institute of Technology</p>
+							<h4>Degree:</h4>
+							<p>Bachelor of Engg</p>
+							<h4>Field of Study:</h4>
+							<p>Mechanical</p>
+							<h4>Academy Year:</h4>
+							<p>2019-2023</p>
+						</div>
+
+					</div>
+
+
+ 					<div class="container right">
+
+ 						<p class="slideEdit2" title="Edit" onclick="enablemodal2()">&#9998;</p>
+ 						<div class="tcontent">
+							<h2>Address</h2>
+ 							<h4>Country:</h4>
+ 							<p>India</p>
+ 							<h4>State:</h4>
+ 							<p>Maharashtra</p>
+ 							<h4>District:</h4>
+ 							<p>Aurangabad</p>
+ 							<h4>ZIP code:</h4>
+ 							<p>423701</p>
+
+ 						</div>
+
+ 					</div>
+
+ 					<div class="container left">  
+
+ 						<p class="slideEdit2" title="Edit" onclick="enablemodal3()">&#9998;</p>
+ 						<div class="tcontent">
+ 							<h2>More About You</h2>
+ 							<h4>Interested In My webpage:</h4>
+ 							<p>Yes</p>
+ 							<h4>Hobby</h4>
+ 							<p>Playing Football</p>
+ 							<h4>Language Known:</h4>
+ 							<p>English, Hindi,Marathi</p>
+ 						</div>
+
+ 					</div>
+
+ 				</div>
+ 				<!-- End of timeline -->
+
+
+ 				<!-- Edit when click on timeline edit option -->
+ 				<!-- Personal Detail Edit -->
+ 				<div class="modal animate">
+					<div class="Edit">
+						<span class="close" title="Close Modal" onclick="disablemodal(0)">&times;</span>
+						<h2 align="center">Personal Detail Edit</h2>
+						<form action="#" onsubmit="return false">
+							<br/>
+							<label for="fname">First Name</label>
+							<br/>
+							<input type="text" id="fname" placeholder="Enter First Name" required/>
+
+							<br/>
+							<label for="lname">Last Name</label>
+							<br/>
+							<input type="text" id="lname" placeholder="Enter Last Name" required/>
+							
+							<br/>
+							<label for="email">Email</label>
+							<br/>
+							<input type="email" id="email" placeholder="Enter Email-ID" required/>
+
+							<br/>
+							<label for="date">Birthday:</label>
+							<br/>
+							
+							
+								<input  type="date" name="birthday" id="birthday">
+								
+							
+
+							<br/>
+							<input type="radio" value="Male" name="sex" id="male" required/>
+						<label for="male">Male</label>
+
+						<input type="radio" value="Female" name="sex" id="female" style="margin-bottom: 16px;" required/>
+						<label for="female" id="fm1">Female</label>
+
+						<br/>
+							<label for="phoneno">Phone no</label>
+							<br/>
+							<input type="number" id="phoneno" placeholder="Enter Phone no" required/>
+
+							<br/>
+							<br/>
+							<label for="religion">Religion</label>
+							<br/>
+							<input type="text" id="religion" placeholder="Enter Religion" required/>
+							
+							<br/>
+	
+						    <button type="submit" onclick="update1()">Update</button>
+
+						    <br/>
+					    <button type="button" class="cancelbtn" onclick="disablemodal(0)">Cancel</button>
+					    <br/>
+						</form>
+
+					</div>
+ 				</div>
+ 				<!-- End of personal detail Edit -->
+
+ 				
+ 			
+			<!-- End of leftfixed profile-->
+<!-- Primary school edit -->
+<div class="modal animate">
+
+	<div class="Edit">
+		<span class="close" title="Close Modal" onclick="disablemodal(1)">&times;</span>
+	   <h2 align="center">Primary School Edit</h2>
+			<form action="#" onsubmit="return false">
+				<br/>
+				<label for="pschool">Primary School</label>
+				<br/>
+				<input type="text" id="pschool" placeholder="Enter Primary School" required/>
+
+				<br/>
+				<label for="degree1">Degree</label>
+				<br/>
+				<input type="text" id="degree1" placeholder="Enter Degree" required/>
+				
+				<br/>
+				<label for="fstudy1">Field of Study</label>
+				<br/>
+				<input type="text" id="fstudy1" placeholder="Enter Field of Study" required/>
+
+				<br/>
+				<label for="syear1">Start Year</label>
+				<label style="position: absolute;left:50.6%;" for="eyear1">End Year</label>
+
+				<br/>
+				<input style="width:49%;" type="number" id="syear1" placeholder="Start Year" min="1970" max="2017" required/>	 		
+				<input style="width:49%;" type="number" id="eyear1" placeholder="End Year" min="1970" required/>
+
+				<br/>
+				<button type="submit" onclick="update2(1)">Update</button>
+
+				<br/>
+			   <button type="button" class="cancelbtn" onclick="disablemodal(1)">Cancel</button>
+			   <br/>
+			</form>
+
+		</div>
+
+</div>	
+<!-- End of primary school edit -->
+
+<!-- Secondary school edit -->
+<div class="modal animate">
+
+	<div class="Edit">
+
+		<span class="close" title="Close Modal" onclick="disablemodal(2)">&times;</span>
+	   <h2 align="center">Secondary School Edit</h2>
+
+			<form action="#" onsubmit="return false">
+				<br/>
+				<label for="sschool">Secondary School</label>
+				<br/>
+				<input type="text" id="sschool" placeholder="Enter Secondary School" required/>
+
+				<br/>
+				<label for="degree2">Degree</label>
+				<br/>
+				<input type="text" id="degree2" placeholder="Enter Degree" required/>
+				
+				<br/>
+				<label for="fstudy2">Field of Study</label>
+				<br/>
+				<input type="text" id="fstudy2" placeholder="Enter Field of Study" required/>
+
+				<br/>
+				<label for="syear1">Start Year</label>
+				<label style="position: absolute;left:50.6%;" for="eyear1">End Year</label>
+
+				<br/>
+				<input style="width:49%;" type="number" id="syear1" placeholder="Start Year" min="1970" max="2017" required/>	 		
+				<input style="width:49%;" type="number" id="eyear1" placeholder="End Year" min="1970" required/>
+
+				<br/>
+				<button type="submit" onclick="update2(2)">Update</button>
+
+				<br/>
+			   <button type="button" class="cancelbtn" onclick="disablemodal(2)">Cancel</button>
+			   <br/>
+			</form>
+
+	</div>
+
+</div>
+<!-- End of Secondary school edit -->
+
+<!-- Address edit -->
+<div class="modal animate">
+
+   <div class="Edit">
+
+	   <span class="close" title="Close Modal" onclick="disablemodal(3)">&times;</span>
+	   <h2 align="center">Address Edit</h2>
+
+	   <form action="#" onsubmit="return false">
+		   <br/>
+		   <label for="country">Country</label>
+		   <br/>
+		   <input type="text" id="country" placeholder="Enter Country" required/>
+
+		   <br/>
+		   <label for="state">State</label>
+		   <br/>
+		   <input type="text" id="state" placeholder="Enter State" required/>
+		   
+		   <br/>
+		   <label for="district">District</label>
+		   <br/>
+		   <input type="text" id="district" placeholder="Enter District" required/>
+
+		   <br/>
+		   <label for="zipcode">ZIP code</label>
+		   <br/>
+		   <input type="number" id="zipcode" placeholder="Enter ZIP code" required/>
+
+		   <br/>
+		   <button type="submit" onclick="update3()">Update</button>
+
+		   <br/>
+	   <button type="button" class="cancelbtn" onclick="disablemodal(3)">Cancel</button>
+	   <br/>
+	   </form>
+
+   </div>
+
+</div>
+<!-- End of address edit -->
+
+
+<!-- More about you edit -->
+<div class="modal animate">
+
+	<div class="Edit">
+
+		<span class="close" title="Close Modal" onclick="disablemodal(4)">&times;</span>
+	   <h2 align="center">More About You Edit</h2>
+
+			<form action="#" onsubmit="return false">
+				<br/>
+				<label for="interest">Interested In My webpage</label>
+				<br/>
+				<select style="width: 100%;
+						   padding: 10px 16px;
+						   margin: 12px 0;
+						   display: inline-block;
+						   border: 1px solid #ccc;
+						   box-sizing: border-box;
+						   border-radius: 5px;
+						   font-size: 14px;" title="Interest" id="interest">
+			   <option value="Interest In">Interest In My webpage</option>
+			   <option value="Yes">Yes</option>
+			   <option value="No">No</option>
+			   <option value="Littlebit">Littlebit</option>
+			   </select>
+			   <br/>
+				<label for="hobby">Hobby</label>
+				<br/>
+				<input type="text" id="hobby" placeholder="Enter Hobby" required/>
+				
+				<br/>
+				<label for="lknown">Language Known</label>
+				<br/>
+				<input type="text" id="lknown" placeholder="Enter Language Known" required/>
+
+				<br/>
+				<button type="submit" onclick="update4()">Update</button>
+
+				<br/>
+			   <button type="button" class="cancelbtn" onclick="disablemodal(4)">Cancel</button>
+			   <br/>
+			</form>
+
+		</div>
+
+</div>
+
+
+
+</div>
+<!-- End of leftfixed profile-->
+
+
+			<!-- start of right section suggestion user -->
+			<div class="rightfixed">
+
+				<div class="suggesfixed"><p id="suggestion">Suggestion</p></div>
+
+				<!-- Start of right fixed -->
+				<div class="sidebarright">
+
+					<!-- suggested user -->
+                    <div class="rightcontent">
+						<img src="../New folder/photoes/other_profile.png">
+						<p class="name">Bhavesh</p>
+						<a href="#" id="connect1" onclick="changelogo('connect1');">&#x271A; Connect</a>
+
+					</div>
+
+					<div class="rightcontent">
+						<img src="../New folder/photoes/other_profile.png">
+						<p class="name">Hrushi</p>
+						<a href="#" id="connect2" onclick="changelogo('connect2');">&#x271A; Connect</a>
+					</div>
+
+					<div class="rightcontent">
+						<img src="../New folder/photoes/other_profile.png">
+						<p class="name">Pratik</p>
+						<a href="#" id="connect3" onclick="changelogo('connect3');">&#x271A; Connect</a>
+					</div>
+
+					<div class="rightcontent">
+						<img src="../New folder/photoes/other_profile.png">
+						<p class="name">Pawan</p>
+						<a href="#" id="connect4" onclick="changelogo('connect4');">&#x271A; Connect</a>
+					</div>
+
+					
+					<!-- End of sugested user -->
+				</div>
+				<!-- End of right fixed -->
+
+			</div>
+			<!-- End of right section suggestion user -->
+
+			<!-- Start of about homaj -->
+			<div class="rightfixed">
+
+				<div class="sidebarright" style="width: 280px;padding: 4px;margin-top: 20px; height: 150px;">
+					<hr style="top: -25px;">
+
+				<div class="foot">
+
+					<ul>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Privacy and Policy</a></li>
+						<li><a href="">Help</a></li>
+					</ul>
+					<img src="../New folder/logo">
+				</div>
+				</div>
+			</div>
+			<!-- End of about homaj -->
+
+			<!-- message bar at the bottom -->
+			<div class="message" id="msg1">
+				<button id="msg2" onclick="showhide()">Messaging</button>
+				<p> No New Messages.</p>
+			</div>
+			<!-- End of message bar at the bottom -->
+
+		</div>
+		<!-- End of wrapper -->
+
+	</div>
+	<!-- End of content section -->
+
+
+</body>
+</html>
